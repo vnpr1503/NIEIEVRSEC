@@ -4,24 +4,31 @@
 	<title>NI Academy VRSEC website</title>
 	<style>
 		#grid{
-  display: grid;
-  height: 100%
-  grid-template-columns: 1fr 4fr 1fr
-  grid-auto-rows:minmax(100px,auto);
-  grid-column-gap:1em;
-  grid-row-gap:1em;
- }
-
-#title{grid-column:1/4;align-self:center;justify-content:center;}
-#navigation{grid-column:1;}
-#main{grid-column:2/3;}
-#scrolling{grid-column:3/4;}
-#footer{grid-column:1/4;}
+  display: grid;background-color:#DDDEE9;
+  height: 100%;
+  grid-template-columns: 1fr 5fr 1fr
+  grid-template-rows:1fr 5fr 1fr;
+  /*grid-auto-rows:minmax(100px,auto);*/
+  grid-gap:1em;
+  }
+#logo{grid-column:1;grid-row:1;background-color:#5650AB;}
+#title{grid-column:2/4;grid-row:1;background-color:#5650AB;}
+#navigation{grid-column:1;grid-row:2/3;}
+#main{grid-column:2/3;grid-row:2/3;}
+#scrolling{grid-column:3/4;grid-row:2/3;}
+#footer{grid-column:1/4;grid-row:3/4;}
 	</style>
 </head>
 <body>
 	<div id="grid">
-		<div id="title">NI ACADEMY EIE DEPARTMENT VRSEC</div>
+		<div id="logo"><img src="tdp-logo.jpg"; height=100px; width=100px;></div>
+		<div id="title">
+		<center><font color="White">NI ACADEMY<br>
+									ELECTRONICS AND INSTRUMENTATION ENGINEERING DEPARTMENT<br>
+									VR SIDDHARTHA ENGINEERING COLLEGE, VIJAYAWADA<br>
+									In Association With<br>
+									NATIONAL INSTRUMENTS, BANGALORE<br>
+									</font></center></div>
 		<div id="navigation">
 			<ul>
 				<li>Home</li>
